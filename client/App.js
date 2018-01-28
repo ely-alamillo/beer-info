@@ -16,6 +16,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
+});
+
+const Routes = StackNavigator({
+  Home: { screen: Home },
+  SignIn: { screen: SignIn },
+  SignUp: { screen: SignUp },
+  Content: { screen: Content }
 });
