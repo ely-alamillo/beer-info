@@ -6,10 +6,12 @@ class Landing extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Landing page Coming Soon!</Text>
+        <View style={styles.mainTitle}>
+          <Text>Landing page Coming Soon!</Text>
+        </View>
         <View>
-          <Button style={styles.button}>
-            <Text>Find Some Beers Yo!</Text>
+          <Button light style={styles.button}>
+            <Text>Find Beers!</Text>
           </Button>
         </View>
       </View>
@@ -24,9 +26,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'green'
   },
+  mainTitle: {
+    marginBottom: 10
+  },
   button: {
-    flexDirection: 'row',
-    backgroundColor: 'red'
+    padding: 10
   }
 });
 
