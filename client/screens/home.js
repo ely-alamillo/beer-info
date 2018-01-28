@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StackNavigator } from 'react-navigation';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
