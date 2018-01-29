@@ -1,13 +1,19 @@
 import React from 'react';
+import expo from 'expo';
 import { StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import Home from './screens/Home';
 import Landing from './screens/Landing';
+import Navigator from './screens/Navigation/Navigator';
 
-const App = StackNavigator({
-  Landing: { screen: Landing },
-  Home: { screen: Home }
-});
+const App = StackNavigator(
+  {
+    Landing: { screen: Landing },
+    Home: { screen: Navigator }
+  },
+  {
+    initialRouteName: 'Home'
+  }
+);
 
 export default App;
